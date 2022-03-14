@@ -1,3 +1,18 @@
+const searchBtn = document.getElementById("button-search");
+const searchInput = document.getElementById("search-field");
+
+searchInput.addEventListener("keypress", function (event) {
+
+    // console.log('hoise')
+
+    // event.preventDefault();
+    if (event.key == 13) {
+        console.log('ok')
+        searchBtn.click();
+    };
+});
+
+
 const searchFood = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
